@@ -8,7 +8,6 @@ public class EjOnce {
         String pass = "Mipass";
         Scanner sc = new Scanner(System.in);
         int intento = 2;
-        boolean salir = false;
         while (intento >= 0) {
             System.out.println("Ingrese la contraseña:");
             String ingreso = sc.nextLine();
