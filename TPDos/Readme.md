@@ -5,7 +5,7 @@
 ### String:
 * Casteos
 * ValueOf
-* Lenght
+* Length
 * CharAt
 * Replace
 * Cod ASCII
