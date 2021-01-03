@@ -3,15 +3,15 @@ package TPAlgoritmosEsenciales;
 import java.util.Scanner;
 
 /**
- * Codifique un algoritmo que solicite un 2 valoresenteros mayoreso igualesa2,
- * que se corresponden a cantidad de filasy columnas. Cree un arreglo de
+ * Codifique un algoritmo que solicite un 2 valores enteros mayoreso iguales a2,
+ * que se corresponden a cantidad de fila sy columnas. Cree un arreglo de
  * tamaño[X,Y]de tipoentero,el tamaño se corresponde a los 2 valores enteros
- * ingresados inicialmente. Solicite al usuarioque ingrese númerosenterospara
+ * ingresados inicialmente. Solicite al usuarioque ingrese números enteros para
  * cargar cada una de las celdas de la matriz. Finalizada la carga calcule el
- * promedioentero delos elementos asignados y cargados en la matriz. Para
- * terminar determinesi el promediocalculado se encuentra asignado en alguna de
- * las celdas, si es asíindique la posicióno posicionescorrespondientes, caso
- * contrario muestre el mensaje “No se encontróninguna coincidencia”.
+ * promedi oentero de los elementos asignados y cargados en la matriz. Para
+ * terminar determinesi el promedio calculado se encuentra asignado en alguna de
+ * las celdas, si es así indique la posición o posiciones correspondientes, caso
+ * contrario muestre el mensaje “No se encontró ninguna coincidencia”.
  */
 public class Ej_5 {
 
