@@ -70,7 +70,7 @@ Para acceder a un valor en el HashMap, use el método get () y consulte su clave
       System.out.println("key: "+i +" value: "+capitalCities.get(i));
     }</code>
     La clase **TreeMap** es idéntica a HashMap con la salvedad que mantiene ordenado los datos por la clave.
-  ###Java HashSet 
+  ### Java HashSet 
   Un  HashSet  es  una  colección  de  elementos  donde  cada  elemento  es  único  y  se  encuentra  en  el paquete java.util:Ejemplo
   <code>importjava.util.HashSet;
     // Import theHashSet class
