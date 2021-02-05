@@ -11,11 +11,11 @@ La clase ArrayList tiene una matriz regular dentro de ella. Cuando se agrega un 
 LinkedList almacena sus elementos en "contenedores". La lista tiene un enlace al primer contenedor y cada contenedor tiene un enlace al siguiente contenedor de la lista. Para agregar un elemento a la lista, el elemento se coloca en un nuevo contenedor y ese contenedor se vincula a uno de los otros contenedores de la lista.
 ### Cuándo usar
 Es mejor usar ArrayList cuando:
-* Quieres acceder a elementos aleatorios con frecuencia
-* Solo necesita agregar o eliminar elementos al final de la lista </br></br></br>
+- Quieres acceder a elementos aleatorios con frecuencia
+- Solo necesita agregar o eliminar elementos al final de la lista </br>
 Es mejor usar una LinkedList cuando:</br>
-* Solo usa la lista recorriéndola en lugar de acceder a elementos aleatorios
-* Con frecuencia es necesario agregar y eliminar elementos desde el principio o la mitad de la lista
+- Solo usa la lista recorriéndola en lugar de acceder a elementos aleatorios
+- Con frecuencia es necesario agregar y eliminar elementos desde el principio o la mitad de la lista
 ### Métodos LinkedList
 Para  muchos  casos, ArrayList es más eficiente ya que es común necesitar acceso a elementos aleatorios en la lista, pero LinkedList proporciona varios métodos para realizar ciertas operaciones de manera más eficiente:
 **addFirst()** Agrega un elemento al principio de la lista.
@@ -78,7 +78,8 @@ Para acceder a un valor en el HashMap, use el método get () y consulte su clave
     </code>
    ### Agregar elementos
     La  clase  HashSet  tiene  muchos  métodos  útiles.  Por  ejemplo,  para  agregarle  elementos,  use  el método add():Ejemplo
-    <code>import java.util.HashSet;
+    <code>
+      import java.util.HashSet;
       public class MyClass{
       public static void main (String[]args){
       HashSet<String>cars =newHashSet<String>();
@@ -89,7 +90,8 @@ Para acceder a un valor en el HashMap, use el método get () y consulte su clave
       cars.add("Mazda");
       System.out.println(cars);
      }
-    }</code>
+    }
+      </code>
       Salida por Consola:<code>[Volvo, Mazda, Ford, BMW]</code>
       Nota:  En  el  ejemplo  anterior,  aunque  BMW  se  agrega  dos  veces,  solo  aparece  una  vez  en  el conjunto porque cada elemento de un conjunto debe ser único.
       ### Comprobar si existe un artículo. Para verificar si un elemento existe en un HashSet, use el método contains(): <code>cars.contains("Mazda");</code>
