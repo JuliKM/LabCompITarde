@@ -12,7 +12,7 @@ LinkedList almacena sus elementos en "contenedores". La lista tiene un enlace al
 ### Cuándo usar
 Es mejor usar ArrayList cuando:
 * Quieres acceder a elementos aleatorios con frecuencia
-* Solo necesita agregar o eliminar elementos al final de la lista </br>
+* Solo necesita agregar o eliminar elementos al final de la lista </br></br></br>
 Es mejor usar una LinkedList cuando:</br>
 * Solo usa la lista recorriéndola en lugar de acceder a elementos aleatorios
 * Con frecuencia es necesario agregar y eliminar elementos desde el principio o la mitad de la lista
@@ -31,8 +31,7 @@ Cree  un objeto  HashMap  llamado  capitalCities  que  almacenará  claves  de  
 <code>import java.util.HashMap; // import the HashMap classHashMap<String, String> capitalCities = new HashMap<String, String>(); <code/>
 ### Agregar elementos
 La  clase  HashMap  tiene  muchos  métodos  útiles.  Por  ejemplo,  para  agregarle  elementos,  use  el método put():
-<code>  
-  // Import the HashMap class
+<code> // Import the HashMap class
   importjava.util.HashMap;
   public class MyClass{
   public static void main(String[]args){
