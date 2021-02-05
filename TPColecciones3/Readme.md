@@ -12,8 +12,8 @@ LinkedList almacena sus elementos en "contenedores". La lista tiene un enlace al
 ### Cuándo usar
 Es mejor usar ArrayList cuando:
 * Quieres acceder a elementos aleatorios con frecuencia
-* Solo necesita agregar o eliminar elementos al final de la lista 
-Es mejor usar una LinkedList cuando:
+* Solo necesita agregar o eliminar elementos al final de la lista </br>
+Es mejor usar una LinkedList cuando:</br>
 * Solo usa la lista recorriéndola en lugar de acceder a elementos aleatorios
 * Con frecuencia es necesario agregar y eliminar elementos desde el principio o la mitad de la lista
 ### Métodos LinkedList
@@ -31,8 +31,21 @@ Cree  un objeto  HashMap  llamado  capitalCities  que  almacenará  claves  de  
 <code>import java.util.HashMap; // import the HashMap classHashMap<String, String> capitalCities = new HashMap<String, String>(); <code/>
 ### Agregar elementos
 La  clase  HashMap  tiene  muchos  métodos  útiles.  Por  ejemplo,  para  agregarle  elementos,  use  el método put():
-<code>  // Import the HashMap classimportjava.util.HashMap;publicclassMyClass{publicstaticvoidmain(String[]args){// Create a HashMap object called capitalCitiesHashMap<String, String>capitalCities =newHashMap<String, String>();
-// Add keys and values (Country, City)capitalCities.put("England","London");capitalCities.put("Germany","Berlin");capitalCities.put("Norway","Oslo");capitalCities.put("USA","Washington DC");System.out.println(capitalCities);}}</code>
+<code>  
+  // Import the HashMap class
+  importjava.util.HashMap;
+  public class MyClass{
+  public static void main(String[]args){
+  // Create a HashMap object called capitalCities
+  HashMap<String, String>capitalCities =newHashMap<String, String>();
+// Add keys and values (Country,City)
+  capitalCities.put("England","London");
+  capitalCities.put("Germany","Berlin");
+  capitalCities.put("Norway","Oslo");
+  capitalCities.put("USA","Washington DC");
+  System.out.println(capitalCities);
+  }
+  }</code>
 ### Acceder a un ítem
 Para acceder a un valor en el HashMap, use el método get () y consulte su clave:
 <code>capitalCities.get("England");</code>
@@ -46,17 +59,39 @@ Para acceder a un valor en el HashMap, use el método get () y consulte su clave
   Recorrer un HashMapRecorra los elementos de un HashMap con un bucle para cada uno.
   Nota:  Use  el  método  keySet  ()  si  solo  desea  las  claves,  y  use  el  método  values  ()  si  solo  desea  los valores:
   <code>//Print keys
-    for(String i :capitalCities.keySet()){System.out.println(i);}// Print valuesfor(Stringi :capitalCities.values()){System.out.println(i);}// Print keys and valuesfor(Stringi :capitalCities.keySet()){
-System.out.println("key: "+i +" value: "+capitalCities.get(i));}</code>
+    for(String i :capitalCities.keySet()){
+    System.out.println(i);
+    }
+    // Print values
+    for(String i :capitalCities.values()){
+    System.out.println(i);
+    }
+    // Print keys and values
+    for(String i :capitalCities.keySet()){
+      System.out.println("key: "+i +" value: "+capitalCities.get(i));
+    }</code>
     La clase **TreeMap** es idéntica a HashMap con la salvedad que mantiene ordenado los datos por la clave.
   ###Java HashSet 
   Un  HashSet  es  una  colección  de  elementos  donde  cada  elemento  es  único  y  se  encuentra  en  el paquete java.util:Ejemplo
-  <code>importjava.util.HashSet;// Import theHashSet class
-    HashSet<String>cars =newHashSet<String>();</code>
+  <code>importjava.util.HashSet;
+    // Import theHashSet class
+    HashSet<String>cars =newHashSet<String>();
+    </code>
    ### Agregar elementos
     La  clase  HashSet  tiene  muchos  métodos  útiles.  Por  ejemplo,  para  agregarle  elementos,  use  el método add ():Ejemplo
-    <code>importjava.util.HashSet;publicclassMyClass{publicstaticvoidmain(String[]args){HashSet<String>cars =newHashSet<String>();cars.add("Volvo");cars.add("BMW");cars.add("Ford");cars.add("BMW");cars.add("Mazda");System.out.println(cars);}}</code>
+    <code>import java.util.HashSet;
+      public class MyClass{
+      public static void main (String[]args){
+      HashSet<String>cars =newHashSet<String>();
+      cars.add("Volvo");
+      cars.add("BMW");
+      cars.add("Ford");
+      cars.add("BMW");
+      cars.add("Mazda");
+      System.out.println(cars);
+     }
+    }</code>
       Salida por Consola:<code>[Volvo, Mazda, Ford, BMW]</code>
       Nota:  En  el  ejemplo  anterior,  aunque  BMW  se  agrega  dos  veces,  solo  aparece  una  vez  en  el conjunto porque cada elemento de un conjunto debe ser único.
-      ### Comprobar si existe un artículo. Para verificar si un elemento existe en un HashSet, use el método contains ():cars.contains("Mazda");
-## TreeSet realiza  todas  las  operaciones  del HashSet.  Además, mantiene  todos  los  elementos ordenados  en  su  orden  natural  o  de  acuerdo  a  como  indique  el  Comparator  que  indique  el constructo
+      ### Comprobar si existe un artículo. Para verificar si un elemento existe en un HashSet, use el método contains(): <code>cars.contains("Mazda");</code>
+      ## TreeSet realiza  todas  las  operaciones  del HashSet.  Además, mantiene  todos  los  elementos ordenados  en  su  orden  natural  o  de  acuerdo  a  como  indique  el  Comparator  que  indique  el constructo
