@@ -77,7 +77,7 @@ Para acceder a un valor en el HashMap, use el método get () y consulte su clave
     HashSet<String>cars =newHashSet<String>();
     </code>
    ### Agregar elementos
-    La  clase  HashSet  tiene  muchos  métodos  útiles.  Por  ejemplo,  para  agregarle  elementos,  use  el método add ():Ejemplo
+    La  clase  HashSet  tiene  muchos  métodos  útiles.  Por  ejemplo,  para  agregarle  elementos,  use  el método add():Ejemplo
     <code>import java.util.HashSet;
       public class MyClass{
       public static void main (String[]args){
