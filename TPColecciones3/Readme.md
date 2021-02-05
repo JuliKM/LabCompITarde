@@ -31,20 +31,24 @@ Cree  un objeto  HashMap  llamado  capitalCities  que  almacenará  claves  de  
 <code>import java.util.HashMap; // import the HashMap classHashMap<String, String> capitalCities = new HashMap<String, String>(); <code/>
 ### Agregar elementos
 La  clase  HashMap  tiene  muchos  métodos  útiles.  Por  ejemplo,  para  agregarle  elementos,  use  el método put():
-<code> // Import the HashMap class
-  importjava.util.HashMap;
-  public class MyClass{
-  public static void main(String[]args){
-  // Create a HashMap object called capitalCities
-  HashMap<String, String>capitalCities =newHashMap<String, String>();
-// Add keys and values (Country,City)
-  capitalCities.put("England","London");
-  capitalCities.put("Germany","Berlin");
-  capitalCities.put("Norway","Oslo");
-  capitalCities.put("USA","Washington DC");
-  System.out.println(capitalCities);
-  }
-  }</code>
+
+    <code>
+    // Import the HashMap class
+    importjava.util.HashMap;
+    public class MyClass{
+    public static void main(String[]args){
+    // Create a HashMap object called capitalCities
+    HashMap<String, String>capitalCities =newHashMap<String, String>();
+    // Add keys and values (Country,City)
+    capitalCities.put("England","London");
+    capitalCities.put("Germany","Berlin");
+    capitalCities.put("Norway","Oslo");
+    capitalCities.put("USA","Washington DC");
+    System.out.println(capitalCities);
+    }
+    }
+    </code>
+
 ### Acceder a un ítem
 Para acceder a un valor en el HashMap, use el método get () y consulte su clave:
 <code>capitalCities.get("England");</code>
@@ -55,9 +59,10 @@ Para acceder a un valor en el HashMap, use el método get () y consulte su clave
 <code>capitalCities.clear();</code>
 ### HashMap Size
 <code>capitalCities.size();</code>
-  Recorrer un HashMap Recorra los elementos de un HashMap con un bucle para cada uno.
-  Nota:  Use  el  método  keySet  ()  si  solo  desea  las  claves,  y  use  el  método  values  ()  si  solo  desea  los valores:
-  <code>//Print keys
+Recorrer un HashMap Recorra los elementos de un HashMap con un bucle para cada uno.
+Nota:  Use  el  método  keySet  ()  si  solo  desea  las  claves,  y  use  el  método  values  ()  si  solo  desea  los valores:
+
+    //Print keys
     for(String i :capitalCities.keySet()){
     System.out.println(i);
     }
@@ -75,15 +80,15 @@ Para acceder a un valor en el HashMap, use el método get () y consulte su clave
   Un HashSet es una colección de elementos donde cada elemento es único y se encuentra en el paquete java.util: 
   Ejemplo
   <code>
+     
     importjava.util.HashSet;
     // Import theHashSet class
     HashSet <String> cars =new HashSet<String>();
-    </code>
-    
+    </code> 
+ 
    ### Agregar elementos
+   La  clase  HashSet  tiene  muchos  métodos  útiles.  Por  ejemplo,  para  agregarle  elementos,  use  el método add():Ejemplo
    
-    La  clase  HashSet  tiene  muchos  métodos  útiles.  Por  ejemplo,  para  agregarle  elementos,  use  el método add():Ejemplo
-    <code>
       import java.util.HashSet;
       public class MyClass{
       public static void main (String[]args){
@@ -96,8 +101,11 @@ Para acceder a un valor en el HashMap, use el método get () y consulte su clave
       System.out.println(cars);
      }
     }
-      </code>
-      Salida por Consola:<code>[Volvo, Mazda, Ford, BMW]</code>
-      Nota:  En  el  ejemplo  anterior,  aunque  BMW  se  agrega  dos  veces,  solo  aparece  una  vez  en  el conjunto porque cada elemento de un conjunto debe ser único.
-      ### Comprobar si existe un artículo. Para verificar si un elemento existe en un HashSet, use el método contains(): <code>cars.contains("Mazda");</code>
-      ## TreeSet realiza  todas  las  operaciones  del HashSet.  Además, mantiene  todos  los  elementos ordenados  en  su  orden  natural  o  de  acuerdo  a  como  indique  el  Comparator  que  indique  el constructo
+    
+   Salida por Consola:<code>[Volvo, Mazda, Ford, BMW]</code>
+   Nota:  En  el  ejemplo  anterior,  aunque  BMW  se  agrega  dos  veces,  solo  aparece  una  vez  en  el conjunto porque cada elemento de un conjunto debe ser único.
+      
+   ### Comprobar si existe un artículo. Para verificar si un elemento existe en un HashSet, use el método contains():
+      <code>cars.contains("Mazda");</code>   
+   ## TreeSet 
+   realiza todas  las  operaciones  del HashSet.  Además, mantiene  todos  los  elementos ordenados  en  su  orden  natural  o  de  acuerdo  a  como  indique  el  Comparator  que  indique  el constructo
